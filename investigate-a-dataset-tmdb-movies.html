@@ -13185,7 +13185,7 @@ nan nan
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">list_of_genres</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">set_of_genres</span><span class="p">)</span>
@@ -13214,11 +13214,11 @@ nan nan
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[13]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[12]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.text.Text at 0x11d20278&gt;</pre>
+<pre>&lt;matplotlib.text.Text at 0x107025f8&gt;</pre>
 </div>
 
 </div>
@@ -13704,7 +13704,7 @@ We learn more through specific genres like SciFi and Western for example.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Conversion of booleans in integers to be able to perform linear algebra operations</span>
@@ -13732,7 +13732,7 @@ We learn more through specific genres like SciFi and Western for example.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">hist_genre</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
@@ -13787,11 +13787,11 @@ dtype: float64
 </div>
 </div>
 
-<div class="output_area"><div class="prompt output_prompt">Out[16]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[14]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.text.Text at 0xd854668&gt;</pre>
+<pre>&lt;matplotlib.text.Text at 0x110300b8&gt;</pre>
 </div>
 
 </div>
@@ -14991,7 +14991,7 @@ So let us try now to investigate popularity.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># We build an overall popularity index per genre through a scalar product between the popularity column </span>
@@ -15052,11 +15052,11 @@ dtype: float64
 </div>
 </div>
 
-<div class="output_area"><div class="prompt output_prompt">Out[17]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[15]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.text.Text at 0xe126b00&gt;</pre>
+<pre>&lt;matplotlib.text.Text at 0x108a23c8&gt;</pre>
 </div>
 
 </div>
@@ -15065,7 +15065,7 @@ dtype: float64
 
 
 <div class="output_text output_subarea ">
-<pre>&lt;matplotlib.figure.Figure at 0xdc8fc18&gt;</pre>
+<pre>&lt;matplotlib.figure.Figure at 0x112e4a90&gt;</pre>
 </div>
 
 </div>
@@ -16176,7 +16176,7 @@ I will also try to split the plot in 4 subplot, because having all 20 genres in 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span><span class="mi">18</span><span class="p">))</span>
@@ -16237,11 +16237,11 @@ dtype: float64
 </div>
 </div>
 
-<div class="output_area"><div class="prompt output_prompt">Out[27]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[16]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.text.Text at 0x16fde780&gt;</pre>
+<pre>&lt;matplotlib.text.Text at 0x11da1c18&gt;</pre>
 </div>
 
 </div>
@@ -20682,24 +20682,21 @@ There could be a mistake in these data or a change in the way the popularity is 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># investigate peak in 1971 for fantasy genre</span>
 
-<span class="k">print</span> <span class="s1">&#39;1971 peaks:&#39;</span>
-<span class="k">for</span> <span class="n">ix</span><span class="p">,</span><span class="n">movie</span> <span class="ow">in</span> <span class="n">extended_movies</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
-    <span class="k">if</span> <span class="n">movie</span><span class="p">[</span><span class="s1">&#39;Fantasy&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="p">(</span><span class="n">movie</span><span class="p">[</span><span class="s1">&#39;release_year&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1971</span><span class="p">):</span>
-        <span class="k">print</span> <span class="n">movie</span><span class="p">[</span><span class="s1">&#39;popularity&#39;</span><span class="p">],</span><span class="n">movie</span><span class="p">[</span><span class="s1">&#39;original_title&#39;</span><span class="p">]</span>        
-        
+<span class="k">print</span> <span class="s1">&#39;1971 peaks:&#39;</span>   
+<span class="k">print</span> <span class="n">extended_movies</span><span class="p">[(</span><span class="n">extended_movies</span><span class="p">[</span><span class="s1">&#39;Fantasy&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> 
+                      <span class="o">&amp;</span> <span class="p">(</span><span class="n">extended_movies</span><span class="p">[</span><span class="s1">&#39;release_year&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1971</span><span class="p">)][[</span><span class="s1">&#39;popularity&#39;</span><span class="p">,</span> <span class="s1">&#39;original_title&#39;</span><span class="p">]]</span>
         
 <span class="c1"># investigate peaks in early 2000s for fantasy genre</span>
 
 <span class="k">print</span> <span class="s1">&#39; &#39;</span>
 <span class="k">print</span> <span class="s1">&#39;Early 2000s peaks:&#39;</span>
-<span class="k">for</span> <span class="n">ix</span><span class="p">,</span><span class="n">movie</span> <span class="ow">in</span> <span class="n">extended_movies</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
-    <span class="k">if</span> <span class="n">movie</span><span class="p">[</span><span class="s1">&#39;Fantasy&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="p">(</span><span class="mi">2001</span> <span class="o">&lt;=</span> <span class="n">movie</span><span class="p">[</span><span class="s1">&#39;release_year&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">2004</span><span class="p">):</span>
-        <span class="k">print</span> <span class="n">movie</span><span class="p">[</span><span class="s1">&#39;popularity&#39;</span><span class="p">],</span><span class="n">movie</span><span class="p">[</span><span class="s1">&#39;original_title&#39;</span><span class="p">],</span><span class="n">movie</span><span class="p">[</span><span class="s1">&#39;release_year&#39;</span><span class="p">]</span>
+<span class="k">print</span> <span class="n">extended_movies</span><span class="p">[(</span><span class="n">extended_movies</span><span class="p">[</span><span class="s1">&#39;Fantasy&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">extended_movies</span><span class="p">[</span><span class="s1">&#39;release_year&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">2004</span><span class="p">)</span> 
+                      <span class="o">&amp;</span> <span class="p">(</span><span class="n">extended_movies</span><span class="p">[</span><span class="s1">&#39;release_year&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">2001</span><span class="p">)][[</span><span class="s1">&#39;popularity&#39;</span><span class="p">,</span> <span class="s1">&#39;original_title&#39;</span><span class="p">,</span><span class="s1">&#39;release_year&#39;</span><span class="p">]]</span>
 </pre></div>
 
 </div>
@@ -20713,101 +20710,138 @@ There could be a mistake in these data or a change in the way the popularity is 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>1971 peaks:
-2.430667 Willy Wonka &amp; the Chocolate Factory
-0.630778 Bedknobs and Broomsticks
+      popularity                       original_title
+9924    2.430667  Willy Wonka &amp; the Chocolate Factory
+9931    0.630778             Bedknobs and Broomsticks
  
 Early 2000s peaks:
-8.575419 The Lord of the Rings: The Fellowship of the Ring 2001
-8.021423 Harry Potter and the Philosopher&#39;s Stone 2001
-3.851009 Donnie Darko 2001
-3.204295 Monsters, Inc. 2001
-2.918566 Shrek 2001
-2.449323 The Mummy Returns 2001
-2.179727 Lara Croft: Tomb Raider 2001
-1.213215 Jimmy Neutron: Boy Genius 2001
-0.974222 Final Fantasy: The Spirits Within 2001
-0.913069 Dr. Dolittle 2 2001
-0.883228 Kate &amp; Leopold 2001
-0.493548 Down to Earth 2001
-0.467592 The Mists of Avalon 2001
-0.356425 Just Visiting 2001
-0.282381 Prince Charming 2001
-0.271443 Jack and the Beanstalk: The Real Story 2001
-0.269944 Max Keeble&#39;s Big Move 2001
-0.263042 Monkeybone 2001
-0.224439 Snow White 2001
-0.906593 Black Knight 2001
-0.115221 Dagon 2001
-0.114896 Halloweentown II: Kalabar&#39;s Revenge 2001
-0.100277 BelphÃ©gor - Le fantÃ´me du Louvre 2001
-0.080857 The Lost World 2001
-0.001349 Slashers 2001
-8.095275 The Lord of the Rings: The Two Towers 2002
-6.012584 Harry Potter and the Chamber of Secrets 2002
-3.241129 Spider-Man 2002
-1.936492 Treasure Planet 2002
-1.494612 Cinderella II: Dreams Come True 2002
-1.118663 The Santa Clause 2 2002
-1.025158 The Scorpion King 2002
-0.92327 The Hot Chick 2002
-0.710064 Snow Queen 2002
-0.698611 Queen of the Damned 2002
-0.678896 Return to Never Land 2002
-0.609595 Interstate 60 2002
-0.573736 Reign of Fire 2002
-0.50575 Dinotopia 2002
-0.27088 Like Mike 2002
-0.218854 Bubba Ho-tep 2002
-0.163437 Left Behind II: Tribulation Force 2002
-0.134028 Rabbits 2002
-0.128012 Tuck Everlasting 2002
-0.070257 Inuyasha: Kagami no Naka no MugenjÅ 2002
-7.122455 The Lord of the Rings: The Return of the King 2003
-6.887883 Underworld 2003
-6.864067 Pirates of the Caribbean: The Curse of the Black Pearl 2003
-2.899533 Bruce Almighty 2003
-2.710192 Elf 2003
-2.491591 Big Fish 2003
-2.394195 Daredevil 2003
-1.830211 The League of Extraordinary Gentlemen 2003
-1.653031 Brother Bear 2003
-1.650018 Peter Pan 2003
-1.569435 Lara Croft Tomb Raider: The Cradle of Life 2003
-1.103879 Atlantis: Milo&#39;s Return 2003
-1.101383 The Cat in the Hat 2003
-1.096211 Freaky Friday 2003
-1.004692 The Haunted Mansion 2003
-0.84781 The Medallion 2003
-0.712023 Batman: Mystery of the Batwoman 2003
-0.576335 Bulletproof Monk 2003
-0.556095 The Order 2003
-0.342268 Shortcut to Happiness 2003
-0.3216 Angels in America 2003
-0.686322 The Ghost of Lord Farquaad 2003
-0.207399 Frank Herbert&#39;s Children of Dune 2003
-0.197848 Leprechaun: Back 2 tha Hood 2003
-0.159996 Northfork 2003
-0.156803 Nothing 2003
-0.039864 The Saddest Music in the World 2003
-5.827781 Harry Potter and the Prisoner of Azkaban 2004
-2.361367 Hellboy 2004
-2.241935 The Polar Express 2004
-2.191033 Shrek 2 2004
-1.665648 Lemony Snicket&#39;s A Series of Unfortunate Events 2004
-1.497252 13 Going On 30 2004
-1.473411 Ella Enchanted 2004
-1.433373 Scooby-Doo 2: Monsters Unleashed 2004
-1.304553 Spider-Man 2 2004
-1.107167 Dawn of the Dead 2004
-0.976399 Thunderbirds 2004
-0.679386 Five Children and It 2004
-0.504166 Van Helsing: The London Assignment 2004
-0.478125 If Only 2004
-0.290518 The Five People You Meet In Heaven 2004
-0.455263 Earthsea 2004
-0.209846 Halloweentown High 2004
-0.201053 Back to Gaya 2004
-0.19252 YÅ«giÅ Dyueru MonsutÄzu Hikari no Piramiddo 2004
+      popularity                                     original_title  \
+2633    8.575419  The Lord of the Rings: The Fellowship of the Ring   
+2634    8.021423           Harry Potter and the Philosopher&#39;s Stone   
+2636    3.851009                                       Donnie Darko   
+2637    3.204295                                     Monsters, Inc.   
+2639    2.918566                                              Shrek   
+2643    2.449323                                  The Mummy Returns   
+2645    2.179727                            Lara Croft: Tomb Raider   
+2663    1.213215                          Jimmy Neutron: Boy Genius   
+2676    0.974222                  Final Fantasy: The Spirits Within   
+2679    0.913069                                     Dr. Dolittle 2   
+2682    0.883228                                     Kate &amp; Leopold   
+2732    0.493548                                      Down to Earth   
+2737    0.467592                                The Mists of Avalon   
+2768    0.356425                                      Just Visiting   
+2790    0.282381                                    Prince Charming   
+2799    0.271443             Jack and the Beanstalk: The Real Story   
+2801    0.269944                              Max Keeble&#39;s Big Move   
+2802    0.263042                                         Monkeybone   
+2813    0.224439                                         Snow White   
+2816    0.906593                                       Black Knight   
+2858    0.115221                                              Dagon   
+2860    0.114896                Halloweentown II: Kalabar&#39;s Revenge   
+2863    0.100277                 BelphÃ©gor - Le fantÃ´me du Louvre   
+2866    0.080857                                     The Lost World   
+2874    0.001349                                           Slashers   
+3911    8.095275              The Lord of the Rings: The Two Towers   
+3912    6.012584            Harry Potter and the Chamber of Secrets   
+3916    3.241129                                         Spider-Man   
+3925    1.936492                                    Treasure Planet   
+3937    1.494612                    Cinderella II: Dreams Come True   
+...          ...                                                ...   
+5027    0.712023                    Batman: Mystery of the Batwoman   
+5044    0.576335                                   Bulletproof Monk   
+5047    0.556095                                          The Order   
+5110    0.342268                              Shortcut to Happiness   
+5121    0.321600                                  Angels in America   
+5140    0.686322                         The Ghost of Lord Farquaad   
+5163    0.207399                   Frank Herbert&#39;s Children of Dune   
+5172    0.197848                        Leprechaun: Back 2 tha Hood   
+5187    0.159996                                          Northfork   
+5189    0.156803                                            Nothing   
+5223    0.039864                     The Saddest Music in the World   
+6962    5.827781           Harry Potter and the Prisoner of Azkaban   
+6975    2.361367                                            Hellboy   
+6976    2.241935                                  The Polar Express   
+6977    2.191033                                            Shrek 2   
+6989    1.665648    Lemony Snicket&#39;s A Series of Unfortunate Events   
+7000    1.497252                                     13 Going On 30   
+7001    1.473411                                     Ella Enchanted   
+7003    1.433373                   Scooby-Doo 2: Monsters Unleashed   
+7012    1.304553                                       Spider-Man 2   
+7021    1.107167                                   Dawn of the Dead   
+7029    0.976399                                       Thunderbirds   
+7069    0.679386                               Five Children and It   
+7101    0.504166                 Van Helsing: The London Assignment   
+7105    0.478125                                            If Only   
+7164    0.290518                 The Five People You Meet In Heaven   
+7190    0.455263                                           Earthsea   
+7199    0.209846                                 Halloweentown High   
+7202    0.201053                                       Back to Gaya   
+7203    0.192520        YÅ«giÅ Dyueru MonsutÄzu Hikari no Piramiddo   
+
+      release_year  
+2633          2001  
+2634          2001  
+2636          2001  
+2637          2001  
+2639          2001  
+2643          2001  
+2645          2001  
+2663          2001  
+2676          2001  
+2679          2001  
+2682          2001  
+2732          2001  
+2737          2001  
+2768          2001  
+2790          2001  
+2799          2001  
+2801          2001  
+2802          2001  
+2813          2001  
+2816          2001  
+2858          2001  
+2860          2001  
+2863          2001  
+2866          2001  
+2874          2001  
+3911          2002  
+3912          2002  
+3916          2002  
+3925          2002  
+3937          2002  
+...            ...  
+5027          2003  
+5044          2003  
+5047          2003  
+5110          2003  
+5121          2003  
+5140          2003  
+5163          2003  
+5172          2003  
+5187          2003  
+5189          2003  
+5223          2003  
+6962          2004  
+6975          2004  
+6976          2004  
+6977          2004  
+6989          2004  
+7000          2004  
+7001          2004  
+7003          2004  
+7012          2004  
+7021          2004  
+7029          2004  
+7069          2004  
+7101          2004  
+7105          2004  
+7164          2004  
+7190          2004  
+7199          2004  
+7202          2004  
+7203          2004  
+
+[91 rows x 3 columns]
 </pre>
 </div>
 </div>
@@ -20840,20 +20874,17 @@ Let us check:</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s1">&#39; &#39;</span>
 <span class="k">print</span> <span class="s1">&#39;Late 60s Science Fiction Movies&#39;</span>
-<span class="k">for</span> <span class="n">ix</span><span class="p">,</span><span class="n">movie</span> <span class="ow">in</span> <span class="n">extended_movies</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
-    <span class="k">if</span> <span class="n">movie</span><span class="p">[</span><span class="s1">&#39;Science Fiction&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="p">(</span><span class="mi">1965</span> <span class="o">&lt;=</span> <span class="n">movie</span><span class="p">[</span><span class="s1">&#39;release_year&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">1970</span><span class="p">):</span>
-        <span class="k">print</span> <span class="n">movie</span><span class="p">[</span><span class="s1">&#39;popularity&#39;</span><span class="p">],</span><span class="n">movie</span><span class="p">[</span><span class="s1">&#39;original_title&#39;</span><span class="p">],</span><span class="n">movie</span><span class="p">[</span><span class="s1">&#39;release_year&#39;</span><span class="p">]</span>
-        
+<span class="k">print</span> <span class="n">extended_movies</span><span class="p">[(</span><span class="n">extended_movies</span><span class="p">[</span><span class="s1">&#39;Science Fiction&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span> <span class="n">extended_movies</span><span class="p">[</span><span class="s1">&#39;release_year&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">1970</span><span class="p">)</span> 
+                     <span class="o">&amp;</span> <span class="p">(</span> <span class="n">extended_movies</span><span class="p">[</span><span class="s1">&#39;release_year&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">1965</span><span class="p">)</span> <span class="p">][[</span><span class="s1">&#39;popularity&#39;</span><span class="p">,</span> <span class="s1">&#39;original_title&#39;</span><span class="p">,</span><span class="s1">&#39;release_year&#39;</span><span class="p">]]</span>
 <span class="k">print</span> <span class="s1">&#39; &#39;</span>
 <span class="k">print</span> <span class="s1">&#39;Late 70s Science Fiction Movies&#39;</span>
-<span class="k">for</span> <span class="n">ix</span><span class="p">,</span><span class="n">movie</span> <span class="ow">in</span> <span class="n">extended_movies</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
-    <span class="k">if</span> <span class="n">movie</span><span class="p">[</span><span class="s1">&#39;Science Fiction&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="p">(</span><span class="mi">1975</span> <span class="o">&lt;</span> <span class="n">movie</span><span class="p">[</span><span class="s1">&#39;release_year&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">1980</span><span class="p">):</span>
-        <span class="k">print</span> <span class="n">movie</span><span class="p">[</span><span class="s1">&#39;popularity&#39;</span><span class="p">],</span><span class="n">movie</span><span class="p">[</span><span class="s1">&#39;original_title&#39;</span><span class="p">],</span><span class="n">movie</span><span class="p">[</span><span class="s1">&#39;release_year&#39;</span><span class="p">]</span>
+<span class="k">print</span> <span class="n">extended_movies</span><span class="p">[(</span><span class="n">extended_movies</span><span class="p">[</span><span class="s1">&#39;Science Fiction&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">extended_movies</span><span class="p">[</span><span class="s1">&#39;release_year&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">1990</span><span class="p">)</span>
+                     <span class="o">&amp;</span> <span class="p">(</span><span class="n">extended_movies</span><span class="p">[</span><span class="s1">&#39;release_year&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">1975</span><span class="p">)][[</span><span class="s1">&#39;popularity&#39;</span><span class="p">,</span> <span class="s1">&#39;original_title&#39;</span><span class="p">,</span><span class="s1">&#39;release_year&#39;</span><span class="p">]]</span>
 </pre></div>
 
 </div>
@@ -20868,69 +20899,95 @@ Let us check:</p>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre> 
 Late 60s Science Fiction Movies
-3.309196 2001: A Space Odyssey 1968
-1.152937 Planet of the Apes 1968
-0.867192 Barbarella 1968
-0.045242 Charly 1968
-0.311525 Quatermass and the Pit 1967
-0.109398 Spider Baby 1967
-0.154786 KaijÅ«tÅ no Kessen: Gojira no Musuko 1967
-0.174153 Frankenstein Created Woman 1967
-0.199141 Dr. Goldfoot and the Bikini Machine 1965
-0.00477 Die, Monster, Die! 1965
-0.26714 The Valley of Gwangi 1969
-0.141056 Hercules in New York 1969
-0.109424 DoppelgÃ¤nger 1969
-0.929393 Fahrenheit 451 1966
-0.410366 Batman 1966
-0.236098 Our Man Flint 1966
-0.034555 Island of Terror 1966
-0.207257 Fantastic Voyage 1966
-0.089072 Seconds 1966
+       popularity                        original_title  release_year
+9719     3.309196                 2001: A Space Odyssey          1968
+9720     1.152937                    Planet of the Apes          1968
+9723     0.867192                            Barbarella          1968
+9756     0.045242                                Charly          1968
+10414    0.311525                Quatermass and the Pit          1967
+10427    0.109398                           Spider Baby          1967
+10428    0.154786  KaijÅ«tÅ no Kessen: Gojira no Musuko          1967
+10433    0.174153            Frankenstein Created Woman          1967
+10649    0.797231        Beneath the Planet of the Apes          1970
+10666    0.284436          Colossus: The Forbin Project          1970
+10687    0.194705           The Man Who Haunted Himself          1970
+10707    0.199141   Dr. Goldfoot and the Bikini Machine          1965
+10723    0.004770                    Die, Monster, Die!          1965
+10743    0.267140                  The Valley of Gwangi          1969
+10748    0.141056                  Hercules in New York          1969
+10751    0.109424                         DoppelgÃ¤nger          1969
+10821    0.929393                        Fahrenheit 451          1966
+10827    0.410366                                Batman          1966
+10844    0.236098                         Our Man Flint          1966
+10847    0.034555                      Island of Terror          1966
+10848    0.207257                      Fantastic Voyage          1966
+10859    0.089072                               Seconds          1966
  
 Late 70s Science Fiction Movies
-12.037933 Star Wars 1977
-1.104816 Close Encounters of the Third Kind 1977
-0.75125 Sinbad and the Eye of the Tiger 1977
-0.331417 Eraserhead 1977
-0.164123 Kingdom of the Spiders 1977
-0.175657 Wizards 1977
-0.24469 Demon Seed 1977
-0.114062 The Island of Dr. Moreau 1977
-0.108321 Empire of the Ants 1977
-0.046957 Day of the Animals 1977
-0.121361 Rabid 1977
-4.935897 Alien 1979
-2.012021 Mad Max 1979
-1.823058 Star Trek: The Motion Picture 1979
-1.691143 Moonraker 1979
-0.794667 Phantasm 1979
-0.516927 The Black Hole 1979
-0.315247 Time After Time 1979
-0.189906 Meteor 1979
-0.16016 The Brood 1979
-0.15896 Stridulum 1979
-0.924068 Logan&#39;s Run 1976
-0.88683 King Kong 1976
-0.329543 Futureworld 1976
-0.564342 The Man Who Fell to Earth 1976
-0.028606 The Food of the Gods 1976
-1.210324 Superman 1978
-0.573763 The Star Wars Holiday Special 1978
-0.480176 Capricorn One 1978
-0.409377 Invasion of the Body Snatchers 1978
-0.3309 Starcrash 1978
-0.282763 Return From Witch Mountain 1978
-0.277769 The Wiz 1978
-0.214124 Battlestar Galactica 1978
-0.205701 The Swarm 1978
-0.184723 Patrick 1978
-0.16377 The Fury 1978
-0.138861 The Boys from Brazil 1978
-0.130725 The Medusa Touch 1978
-0.409587 Attack of the Killer Tomatoes! 1978
-0.073425 KISS Meets the Phantom of the Park 1978
-0.072267 The Cat from Outer Space 1978
+       popularity                          original_title  release_year
+7271     0.881814      Conquest of the Planet of the Apes          1972
+7275     0.450264                          Silent Running          1972
+7276     0.432033                     Slaughterhouse-Five          1972
+7306     0.058828                      Night of the Lepus          1972
+9719     3.309196                   2001: A Space Odyssey          1968
+9720     1.152937                      Planet of the Apes          1968
+9723     0.867192                              Barbarella          1968
+9756     0.045242                                  Charly          1968
+9761     1.049959                      Young Frankenstein          1974
+9763     0.837644                               Dark Star          1974
+9787     0.224462                                  Zardoz          1974
+9792     0.179943                                Phase IV          1974
+9800     0.067731                            Flesh Gordon          1974
+9808     1.409947           The Rocky Horror Picture Show          1975
+9815     0.527888                       A Boy and His Dog          1975
+9816     0.513067                         Death Race 2000          1975
+9818     0.478232                Escape to Witch Mountain          1975
+9819     0.451933                              Black Moon          1975
+9827     0.292586                      The Stepford Wives          1975
+9828     0.289443               The Land That Time Forgot          1975
+9832     0.071830                                 Shivers          1975
+9833     0.269347                                     Bug          1975
+9835     0.335421                              Rollerball          1975
+9846     0.065941                    The Ultimate Warrior          1975
+9869     0.215748             The Brain That Wouldn&#39;t Die          1962
+9873     0.142676                     Panic in Year Zero!          1962
+9889     0.451661                   The Last Man on Earth          1964
+9896     0.194002               The Incredible Mr. Limpet          1964
+9907     0.178025                 Robinson Crusoe on Mars          1964
+9916     0.082856                   First Men in the Moon          1964
+...           ...                                     ...           ...
+10137    0.083697           The Day the Earth Caught Fire          1961
+10146    0.712389                        The Time Machine          1960
+10164    0.144106                          The Lost World          1960
+10167    0.127219                   Village of the Damned          1960
+10414    0.311525                  Quatermass and the Pit          1967
+10427    0.109398                             Spider Baby          1967
+10428    0.154786    KaijÅ«tÅ no Kessen: Gojira no Musuko          1967
+10433    0.174153              Frankenstein Created Woman          1967
+10451    0.334587                 The Day of the Triffids          1963
+10464    0.601084          X: The Man with the X-Ray Eyes          1963
+10598    0.971417                               Westworld          1973
+10599    0.876503       Battle for the Planet of the Apes          1973
+10607    0.621476                           Soylent Green          1973
+10609    0.568400                                 Sleeper          1973
+10629    0.203942  Frankenstein and the Monster from Hell          1973
+10637    0.145079                                 Sssssss          1973
+10649    0.797231          Beneath the Planet of the Apes          1970
+10666    0.284436            Colossus: The Forbin Project          1970
+10687    0.194705             The Man Who Haunted Himself          1970
+10707    0.199141     Dr. Goldfoot and the Bikini Machine          1965
+10723    0.004770                      Die, Monster, Die!          1965
+10743    0.267140                    The Valley of Gwangi          1969
+10748    0.141056                    Hercules in New York          1969
+10751    0.109424                           DoppelgÃ¤nger          1969
+10821    0.929393                          Fahrenheit 451          1966
+10827    0.410366                                  Batman          1966
+10844    0.236098                           Our Man Flint          1966
+10847    0.034555                        Island of Terror          1966
+10848    0.207257                        Fantastic Voyage          1966
+10859    0.089072                                 Seconds          1966
+
+[69 rows x 3 columns]
 </pre>
 </div>
 </div>
@@ -20961,7 +21018,7 @@ I also forgot "Close Encounter of the Third Kind" the same year as the first "St
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Continue to explore the data to address your additional research</span>
@@ -21109,11 +21166,11 @@ Axes(0.125,0.125;0.62x0.755)
 </div>
 </div>
 
-<div class="output_area"><div class="prompt output_prompt">Out[33]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[31]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.text.Text at 0x1564e198&gt;</pre>
+<pre>&lt;matplotlib.text.Text at 0x13b9d400&gt;</pre>
 </div>
 
 </div>
@@ -22162,7 +22219,7 @@ Let us try to test it anyway.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">corrmat</span> <span class="o">=</span> <span class="n">extended_movies</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
@@ -22179,11 +22236,11 @@ Let us try to test it anyway.</p>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[34]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[32]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.text.Text at 0x131164a8&gt;</pre>
+<pre>&lt;matplotlib.text.Text at 0x150b25f8&gt;</pre>
 </div>
 
 </div>
@@ -22472,19 +22529,6 @@ Once done, we find that the 5 most popular genres are:</p>
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span> 
-</pre></div>
-
-</div>
-</div>
-</div>
-
 </div>
     </div>
   </div>
